@@ -3888,21 +3888,61 @@
             "search_analyzer": "cs_search_analyzer",
             "fielddata": true
         },
-        "roles": {
-            "type": "text",
-            "fields": {
-                "raw": {
-                    "type": "text",
-                    "analyzer": "keylower",
-                    "fielddata": true
+        "roles" : {
+            "properties" : {
+              "role" : {
+                "type" : "text",
+                "fields" : {
+                  "raw" : {
+                    "type" : "text",
+                    "analyzer" : "keylower",
+                    "fielddata" : true
+                  }
+                },
+                "copy_to" : [
+                  "all_fields"
+                ],
+                "analyzer" : "cs_index_analyzer",
+                "search_analyzer" : "cs_search_analyzer",
+                "fielddata" : true
+              },
+              "scope" : {
+                "properties" : {
+                  "organisationId" : {
+                    "type" : "text",
+                    "fields" : {
+                      "raw" : {
+                        "type" : "text",
+                        "analyzer" : "keylower",
+                        "fielddata" : true
+                      }
+                    },
+                    "copy_to" : [
+                      "all_fields"
+                    ],
+                    "analyzer" : "cs_index_analyzer",
+                    "search_analyzer" : "cs_search_analyzer",
+                    "fielddata" : true
+                  }
                 }
-            },
-            "copy_to": [
-                "all_fields"
-            ],
-            "analyzer": "cs_index_analyzer",
-            "search_analyzer": "cs_search_analyzer",
-            "fielddata": true
+              },
+              "userId" : {
+                "type" : "text",
+                "fields" : {
+                  "raw" : {
+                    "type" : "text",
+                    "analyzer" : "keylower",
+                    "fielddata" : true
+                  }
+                },
+                "copy_to" : [
+                  "all_fields"
+                ],
+                "analyzer" : "cs_index_analyzer",
+                "search_analyzer" : "cs_search_analyzer",
+                "fielddata" : true
+              }
+            }
         },
         "rootOrgId": {
             "type": "text",
