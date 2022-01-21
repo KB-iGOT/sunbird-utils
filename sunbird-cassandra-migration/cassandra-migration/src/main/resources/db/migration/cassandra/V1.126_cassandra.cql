@@ -6,9 +6,11 @@ INSERT INTO sunbird.system_settings (id, field, value) values ('orgTypeConfig', 
 INSERT INTO sunbird.role_group (id, name) VALUES ('CBC_ADMIN','CBC Administrator');
 INSERT INTO sunbird.role_group (id, name) VALUES ('MDO_ADMIN','MDO Administrator');
 INSERT INTO sunbird.role_group (id, name) VALUES ('SPV_ADMIN','SPV Administrator');
+INSERT INTO sunbird.role_group (id, name) VALUES ('CBP_ADMIN','CBP Administrator');
 INSERT INTO sunbird.role (id, name, rolegroupid, status) VALUES ('CBC_ADMIN', 'CBC_ADMIN', ['CBC_ADMIN'], 1);
 INSERT INTO sunbird.role (id, name, rolegroupid, status) VALUES ('MDO_ADMIN', 'MDO_ADMIN', ['MDO_ADMIN'], 1);
 INSERT INTO sunbird.role (id, name, rolegroupid, status) VALUES ('SPV_ADMIN', 'SPV_ADMIN', ['SPV_ADMIN'], 1);
+INSERT INTO sunbird.role (id, name, rolegroupid, status) VALUES ('CBP_ADMIN', 'CBP_ADMIN', ['CBP_ADMIN'], 1);
 INSERT INTO sunbird.role_group (id, name) VALUES ('CBC_MEMBER','CBC Member');
 INSERT INTO sunbird.role_group (id, name) VALUES ('CONTENT_CREATOR','Content Creator');
 INSERT INTO sunbird.role_group (id, name) VALUES ('CONTENT_REVIEWER','Content Reviewer');
